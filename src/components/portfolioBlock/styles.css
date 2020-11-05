@@ -1,0 +1,47 @@
+.portfolio-block-root {
+  position: relative;
+  left: -40px;
+}
+
+.portfolio-block-container {
+  display: flex;
+  width: 510px;
+  border-left: 20px rgb(233, 132, 87) solid;
+  background-color: rgb(64, 58, 72);
+}
+
+.portfolio-block-border {
+  background-color: rgb(244,242,245);
+  height: 40px;
+}
+
+.portfolio-block-left {
+  background-color: rgb(233, 132, 87);
+  width: 20px;
+}
+
+.portfolio-block-container img#profile-image {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 9999999999px;
+}
+
+.portfolio-title-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.portfolio-title-container #portfolio-name {
+  font-family: "Jura", sans-serif;
+  font-size: 50px;
+  padding: 10px 0px;
+  color: rgb(233, 132, 87);
+}
+
+.portfolio-title-container #portfolio-occupation {
+  font-family: "Comfortaa", cursive;
+  font-size: 25px;
+  color: white;
+}
