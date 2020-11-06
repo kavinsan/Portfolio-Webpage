@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Comfortaa&family=Jura&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anaheim&family=Comfortaa&family=Jura&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 h1.content-title {
-
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p.content {
@@ -22,17 +21,25 @@ p.content {
   display: flex;
   width: 750px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .LeftPanel {
   border-left: 20px solid rgb(64, 58, 72);
-  padding: 20px 20px 0px 20px;
-  background-color: rgb(244,242,245);
+  padding: 0px 20px 20px 20px;
+  background-color: rgb(244, 242, 245);
 }
 
 .RightPanel {
-  padding: 20px 20px 0px 20px;
-  background-color: rgb(229,227,232);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 20px 20px 20px;
+  background-color: rgb(229, 227, 232);
+}
+
+ul {
+  padding-left: 20px;
 }
 
 .Portfolio {

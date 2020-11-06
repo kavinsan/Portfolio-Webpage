@@ -1,5 +1,9 @@
-
 div.title-underline {
-    width: 40px;
-    border-top: 4px solid black;
+  width: 40px;
+  border-top: 4px solid black;
+}
+
+.title-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

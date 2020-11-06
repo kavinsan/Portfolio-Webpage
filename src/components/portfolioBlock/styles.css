@@ -30,7 +30,7 @@
 .portfolio-title-container {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .portfolio-title-container #portfolio-name {
