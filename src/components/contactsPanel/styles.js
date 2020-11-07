@@ -39,11 +39,9 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("870")]: {
       width: "240px",
-    },
-    [theme.breakpoints.down("xs")]: {
       "& .contact-value": {
         color: "white",
       }
-    },
+    }
   },
 }));
