@@ -2,19 +2,36 @@ import React from "react";
 import "./styles.css";
 import ProfileImage from "../../assets/profile-image.png";
 
+import { useStyles } from "./styles";
+import { useTheme } from "@material-ui/core/styles";
+
+import ContactsPanel from "../contactsPanel/index";
+
 const PortfolioBLock = (props) => {
+  const theme = useTheme();
+  const classes = useStyles(theme);
+
   return (
-    <div className="portfolio-block-root">
-      <div className="portfolio-block-border"></div>
-      <div className="portfolio-block-container">
-        <div className="portfolio-block-left"></div>
-        <img id="profile-image" alt="profile" src={ProfileImage} />
-        <div className="portfolio-title-container">
-          <h1 id="portfolio-name">Kavinsan Thavanesan</h1>
-          <h1 id="portfolio-occupation">Software Engineer</h1>
+    <div className={classes.portfolioBlockRoot}>
+      <div className={classes.portfolioBlockBorder}></div>
+      <div className={classes.portfolioBlockContainer}>
+        <div className={classes.portfolioBlockLeft}></div>
+        <div className={classes.portfolioBlockMiddle}>
+          <img
+            className={classes.profileImage}
+            alt="profile"
+            src={ProfileImage}
+          />
+          <div className={classes.portfolioTitleContainer}>
+            <h1 id="portfolio-name">Kavinsan Thavanesan</h1>
+            <h1 id="portfolio-occupation">Software Engineer</h1>
+          </div>
+          <div className={classes.subLeftPanel}>
+            <ContactsPanel />
+          </div>
         </div>
       </div>
-      <div className="portfolio-block-border"></div>
+      <div className={classes.portfolioBlockBorder}></div>
     </div>
   );
 };

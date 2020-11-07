@@ -7,10 +7,13 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
+import { useTheme } from "@material-ui/core/styles";
 import { useStyles } from "./styles";
 
 const ContactsPanel = (props) => {
-  const classes = useStyles();
+  const theme = useTheme();
+  const classes = useStyles(theme);
+
   return (
     <div className={classes.panelContainer}>
       <ContentTitle>Contacts</ContentTitle>

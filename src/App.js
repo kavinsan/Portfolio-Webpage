@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css";
 
+import { useStyles } from "./styles";
+import { useTheme } from "@material-ui/core/styles";
+
 import ContentTitle from "./components/contentTitle/index";
 import Content from "./components/content/index";
 import PortfolioBlock from "./components/portfolioBlock/index";
@@ -12,9 +15,12 @@ import ProjectsPanel from "./components/projectPanel/index";
 import ExperiencePanel from "./components/experiencePanel/index";
 
 const App = (props) => {
+  const theme = useTheme();
+  const classes = useStyles(theme);
+
   return (
-    <div className="App">
-      <div className="LeftPanel">
+    <div className={classes.App}>
+      <div className={classes.LeftPanel}>
         <ContentTitle>Profile</ContentTitle>
         <Content>
           A full stack Software Engineer and a life-long learner focused on new
@@ -26,10 +32,13 @@ const App = (props) => {
           environments.
         </Content>
         <PortfolioBlock />
-        <ExperiencePanel/>
-        <ProjectsPanel/>
+        <div className={classes.subLeftPanel}>
+        <SkillsPanel />
+        </div>
+        <ExperiencePanel />
+        <ProjectsPanel />
       </div>
-      <div className="RightPanel">
+      <div className={classes.RightPanel}>
         <ContactsPanel />
         <div className="divider" />
         <SkillsPanel />
