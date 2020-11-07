@@ -2,11 +2,9 @@ import React from "react";
 
 import ContentTitle from "../contentTitle/index";
 
-import { useTheme } from "@material-ui/core/styles";
 import { useStyles } from "./styles";
 
 const ProjectsPanel = (props) => {
-  const theme = useTheme();
   const classes = useStyles();
 
   return (
@@ -20,8 +18,8 @@ const ProjectsPanel = (props) => {
           </h2>
           <a
             href="http://cryptomibs.io/"
-            target="_blank"
-            className="project-link"
+            target="_blank" without rel="noopener noreferrer"
+            className="project-link" 
           >
             Click to View
           </a>
@@ -44,7 +42,7 @@ const ProjectsPanel = (props) => {
           </h2>
           <a
             href="https://github.com/kavinsan/Google-Weather-App-Prototype"
-            target="_blank"
+            target="_blank" without rel="noopener noreferrer"
             className="project-link"
           >
             Click to View
@@ -65,7 +63,7 @@ const ProjectsPanel = (props) => {
           </h2>
           <a
             href="https://github.com/kavinsan/Ned-Bot"
-            target="_blank"
+            target="_blank" without rel="noopener noreferrer"
             className="project-link"
           >
             Click to View

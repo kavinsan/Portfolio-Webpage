@@ -2,11 +2,9 @@ import React from "react";
 
 import ContentTitle from "../contentTitle/index";
 
-import { useTheme } from "@material-ui/core/styles";
 import { useStyles } from "./styles";
 
 const ExperiencePanel = (props) => {
-  const theme = useTheme();
   const classes = useStyles();
 
   return (
