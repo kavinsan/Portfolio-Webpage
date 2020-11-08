@@ -65,7 +65,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   portfolioBlockLeft: {
     backgroundColor: "rgb(233, 132, 87)",
-    width: "20px",
+    // width: "20px",
     [theme.breakpoints.down("xs")]: {
       width: "0px",
     },
