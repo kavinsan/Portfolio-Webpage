@@ -29,6 +29,7 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: "9999999999px",
     [theme.breakpoints.down("xs")]: {
       alignSelf: "center",
+      order: 2,
     },
   },
   portfolioTitleContainer: {
@@ -37,6 +38,7 @@ export const useStyles = makeStyles((theme) => ({
     alignSelf: "flex-start",
     [theme.breakpoints.down("xs")]: {
       alignSelf: "center",
+      order: 1,
     },
     "& #portfolio-name": {
       fontFamily: '"Jura", sans-serif',
@@ -73,7 +75,7 @@ export const useStyles = makeStyles((theme) => ({
       flexDirection: "column",
       margin: "0 auto",
       height: `${theme.props.height}px`,
-      justifyContent: "center",
+      justifyContent: "space-evenly",
     },
   },
   portfolioBlockBorder: {
@@ -86,6 +88,9 @@ export const useStyles = makeStyles((theme) => ({
   subLeftPanel: {
     [theme.breakpoints.up("870")]: {
       display: "none",
+    },
+    [theme.breakpoints.down("xs")]: {
+      order: 3,
     },
   },
 }));
