@@ -17,6 +17,7 @@ export const useStyles = makeStyles((theme) => ({
       display: "flex",
       width: "calc(100% + 40px)",
       margin: "0 auto",
+      flexDirection: "column",
     },
     [theme.breakpoints.down("xs")]: {
       borderLeft: "none",
@@ -37,6 +38,9 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignSelf: "flex-start",
+    [theme.breakpoints.down("870")]: {
+      alignSelf: "center",
+    },
     [theme.breakpoints.down("xs")]: {
       alignSelf: "center",
       order: 1,
@@ -72,6 +76,9 @@ export const useStyles = makeStyles((theme) => ({
   },
   portfolioBlockMiddle: {
     display: "flex",
+    [theme.breakpoints.down("870")]: {
+      justifyContent: "center"
+    },
     [theme.breakpoints.down("xs")]: {
       flexDirection: "column",
       margin: "0 auto",
@@ -87,11 +94,20 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   subLeftPanel: {
+    [theme.breakpoints.up("xs")]: {
+      display: "none",
+    },
+    [theme.breakpoints.down("xs")]: {
+      display: "flex",
+      order: 3,
+    },
+  },
+  subLeftPanelMd: {
     [theme.breakpoints.up("870")]: {
       display: "none",
     },
     [theme.breakpoints.down("xs")]: {
-      order: 3,
+      display: "none",
     },
   },
 }));

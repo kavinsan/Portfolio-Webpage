@@ -38,6 +38,12 @@ export const useStyles = makeStyles((theme) => ({
       transform: "scale(1.05)",
     },
     [theme.breakpoints.down("870")]: {
+      width: "262px",
+      "& .contact-value": {
+        color: "white",
+      }
+    },
+    [theme.breakpoints.down("xs")]: {
       width: "240px",
       "& .contact-value": {
         color: "white",

@@ -42,6 +42,9 @@ const PortfolioBLock = (props) => {
             <ContactsPanel />
           </div>
         </div>
+        <div className={classes.subLeftPanelMd}>
+            <ContactsPanel />
+          </div>
       </div>
       <div className={classes.portfolioBlockBorder}></div>
     </div>
