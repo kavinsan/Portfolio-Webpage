@@ -25,8 +25,9 @@ export const useStyles = makeStyles((theme) => ({
   profileImage: {
     width: "150px",
     height: "150px",
-    padding: "20px",
+    margin: "20px",
     borderRadius: "9999999999px",
+    border: "5px solid rgb(233, 132, 87)",
     [theme.breakpoints.down("xs")]: {
       alignSelf: "center",
       order: 2,
