@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import ProfileImage from "../../assets/profile-image.png";
 
@@ -9,6 +9,17 @@ import ContactsPanel from "../contactsPanel/index";
 
 const PortfolioBLock = (props) => {
   const theme = useTheme();
+  const [height,setHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    if(window.innerHeight){
+      setHeight(window.innerHeight);
+    }
+  },[]);
+  
+  theme.props = {
+    height: height
+  }
   const classes = useStyles(theme);
 
   return (

@@ -4,6 +4,9 @@ export const useStyles = makeStyles((theme) => ({
   portfolioBlockRoot: {
     position: "relative",
     left: "-40px",
+    [theme.breakpoints.down("xs")]: {
+      left: "-20px",
+    },
   },
   portfolioBlockContainer: {
     display: "flex",
@@ -14,6 +17,9 @@ export const useStyles = makeStyles((theme) => ({
       display: "flex",
       width: "calc(100% + 40px)",
       margin: "0 auto",
+    },
+    [theme.breakpoints.down("xs")]: {
+      borderLeft: "none",
     },
   },
   profileImage: {
@@ -66,11 +72,16 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       flexDirection: "column",
       margin: "0 auto",
+      height: `${theme.props.height}px`,
+      justifyContent: "center",
     },
   },
   portfolioBlockBorder: {
     backgroundColor: "rgb(244,242,245)",
     height: "40px",
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
+    },
   },
   subLeftPanel: {
     [theme.breakpoints.up("870")]: {

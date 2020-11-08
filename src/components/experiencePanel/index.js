@@ -3,9 +3,11 @@ import React from "react";
 import ContentTitle from "../contentTitle/index";
 
 import { useStyles } from "./styles";
+import { useTheme } from "@material-ui/core/styles";
 
 const ExperiencePanel = (props) => {
-  const classes = useStyles();
+  const theme = useTheme();
+  const classes = useStyles(theme);
 
   return (
     <div className={classes.panelContainer}>

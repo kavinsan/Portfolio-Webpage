@@ -1,7 +1,11 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-export const useStyles = makeStyles(() => ({
-  panelContainer: {},
+export const useStyles = makeStyles((theme) => ({
+  panelContainer: {
+    [theme.breakpoints.down("xs")]: {
+      order: 4,
+    },
+  },
   content: {
     fontFamily: "Anaheim, sans-serif",
     "& h2": {

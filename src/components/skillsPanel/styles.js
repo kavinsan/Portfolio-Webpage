@@ -4,17 +4,17 @@ export const useStyles = makeStyles((theme) => ({
   panelContainer: {},
   content: {
     fontFamily: "Anaheim, sans-serif",
-    [theme.breakpoints.down("870")]:{
+    [theme.breakpoints.down("870")]: {
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: "space-between"
+      justifyContent: "space-between",
     },
     "& h2": {
       fontSize: "20px",
       paddingBottom: "10px",
     },
     "& div > ul": {
-        paddingBottom: "20px"
-    }
+      paddingBottom: "20px",
+    },
   },
 }));

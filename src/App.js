@@ -21,22 +21,29 @@ const App = (props) => {
   return (
     <div className={classes.App}>
       <div className={classes.LeftPanel}>
-        <ContentTitle>Profile</ContentTitle>
-        <Content>
-          A full stack Software Engineer and a life-long learner focused on new
-          technology and best practices to write beautiful code. Looking for a
-          full-time position at a company to further understandings in backend
-          architecture in large scale project design as well as fundamentals of
-          frontend UX/UI designs. Experienced in object oriented programming,
-          software development processes and working in an agile startup
-          environments.
-        </Content>
-        <PortfolioBlock />
+        <div id="profileContainer">
+          <ContentTitle>Profile</ContentTitle>
+          <Content>
+            A full stack Software Engineer and a life-long learner focused on
+            new technology and best practices to write beautiful code. Looking
+            for a full-time position at a company to further understandings in
+            backend architecture in large scale project design as well as
+            fundamentals of frontend UX/UI designs. Experienced in object
+            oriented programming, software development processes and working in
+            an agile startup environments.
+          </Content>
+        </div>
+        <div id="portfolioBlockContainer">
+          <PortfolioBlock />
+        </div>
         <div className={classes.subLeftPanel}>
-        <SkillsPanel />
+          <SkillsPanel />
         </div>
         <ExperiencePanel />
         <ProjectsPanel />
+        <div className={classes.subLeftEducationPanel}>
+          <EducationPanel />
+        </div>
       </div>
       <div className={classes.RightPanel}>
         <ContactsPanel />

@@ -24,20 +24,6 @@ p.content {
   justify-content: center;
 }
 
-.LeftPanel {
-  border-left: 20px solid rgb(64, 58, 72);
-  padding: 0px 20px 20px 20px;
-  background-color: rgb(244, 242, 245);
-}
-
-.RightPanel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0px 20px 20px 20px;
-  background-color: rgb(229, 227, 232);
-}
-
 ul {
   padding-left: 20px;
 }
