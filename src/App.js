@@ -22,7 +22,7 @@ const App = (props) => {
     <div className={classes.App}>
       <div className={classes.LeftPanel}>
         <div id="profileContainer">
-          <ContentTitle>Profile</ContentTitle>
+          <ContentTitle>About Me</ContentTitle>
           <Content>
             A full stack Software Engineer and a life-long learner focused on
             new technology and best practices to write beautiful code. Looking
