@@ -25,6 +25,10 @@ export const useStyles = makeStyles((theme) => ({
   },
   projectTitle: {
     fontSize: "17px !important",
+    "& .project-name": {
+      cursor: "pointer",
+      textDecoration: "underline"
+    },
     "& .project-tools": {
       color: "rgb(233, 132, 87)",
     },

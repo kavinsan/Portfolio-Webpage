@@ -15,16 +15,17 @@ const ProjectsPanel = (props) => {
       <div className={classes.content}>
         <div className={classes.projectContainer}>
           <h2 className={classes.projectTitle}>
-            CryptoMibs Platform{" - "}
+            <span
+              className="project-name"
+              onClick={() => {
+                window.open("http://cryptomibs.io/", "_blank");
+              }}
+            >
+              CryptoMibs Platform
+            </span>
+            {" - "}
             <span className="project-tools">React, Web3, Express</span>
           </h2>
-          <a
-            href="http://cryptomibs.io/"
-            target="_blank" without rel="noopener noreferrer"
-            className="project-link" 
-          >
-            Click to View
-          </a>
         </div>
         <ul>
           <li>
@@ -39,37 +40,44 @@ const ProjectsPanel = (props) => {
         </ul>
         <div className={classes.projectContainer}>
           <h2 className={classes.projectTitle}>
-            Google Maps {" - "}
+            <span
+              className="project-name"
+              onClick={() => {
+                window.open(
+                  "https://github.com/kavinsan/Google-Weather-App-Prototype",
+                  "_blank"
+                );
+              }}
+            >
+              Google Maps
+            </span>
+            {" - "}
             <span className="project-tools">React, Redux &amp; Redux Saga</span>
           </h2>
-          <a
-            href="https://github.com/kavinsan/Google-Weather-App-Prototype"
-            target="_blank" without rel="noopener noreferrer"
-            className="project-link"
-          >
-            Click to View
-          </a>
         </div>
         <ul>
           <li>
-            Using Google Maps API to display real time Weather in different cities of British Colombia.
+            Using Google Maps API to display real time Weather in different
+            cities of British Colombia.
           </li>
           <li>
-            Utilizes the Open Weather API for accurate weather details, using local storage to handle API rate limit on refetch.
+            Utilizes the Open Weather API for accurate weather details, using
+            local storage to handle API rate limit on refetch.
           </li>
         </ul>
         <div className={classes.projectContainer}>
           <h2 className={classes.projectTitle}>
-            Discord Bot {" - "}
+            <span
+              className="project-name"
+              onClick={() => {
+                window.open("https://github.com/kavinsan/Ned-Bot", "_blank");
+              }}
+            >
+              Discord Bot
+            </span>
+            {" - "}
             <span className="project-tools">Node, Express, Python 3</span>
           </h2>
-          <a
-            href="https://github.com/kavinsan/Ned-Bot"
-            target="_blank" without rel="noopener noreferrer"
-            className="project-link"
-          >
-            Click to View
-          </a>
         </div>
         <ul>
           <li>
