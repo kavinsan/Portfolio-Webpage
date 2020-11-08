@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("870")]: {
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: "space-between",
+      justifyContent: "space-evenly",
     },
     "& h2": {
       fontSize: "20px",
@@ -16,5 +16,8 @@ export const useStyles = makeStyles((theme) => ({
     "& div > ul": {
       paddingBottom: "20px",
     },
+    "& div": {
+      width: "100px",
+    }
   },
 }));
