@@ -50,9 +50,6 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "50px",
       padding: "10px 0px",
       color: "rgb(233, 132, 87)",
-      [theme.breakpoints.down("sm")]: {
-        fontSize: "40px",
-      },
       [theme.breakpoints.down("xs")]: {
         textAlign: "center",
         fontSize: "40px",
