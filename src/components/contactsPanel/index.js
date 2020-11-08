@@ -25,11 +25,23 @@ const ContactsPanel = (props) => {
         <MailOutlineIcon className="contact-icon" />
         <span className="contact-value">kavinsan.nesan@gmail.com</span>
       </div>
-      <div className={classes.contactItem}>
+      <div
+        className={classes.contactItem}
+        style={{cursor:"pointer"}}
+        onClick={() => {
+          window.open("https://github.com/kavinsan", "_blank");
+        }}
+      >
         <GitHubIcon className="contact-icon" />
         <span className="contact-value">github.com/kavinsan</span>
       </div>
-      <div className={classes.contactItem}>
+      <div
+        className={classes.contactItem}
+        style={{cursor:"pointer"}}
+        onClick={() => {
+          window.open("https://www.linkedin.com/in/kavinsan", "_blank");
+        }}
+      >
         <LinkedInIcon className="contact-icon" />
         <span className="contact-value">linkedin.com/in/kavinsan</span>
       </div>

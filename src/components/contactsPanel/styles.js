@@ -24,7 +24,7 @@ export const useStyles = makeStyles((theme) => ({
       color: "rgb(233, 132, 87)",
       paddingRight: "20px",
       transition: "all 0.3s linear",
-      cursor: "pointer",
+      // cursor: "pointer",
     },
     "& .MuiSvgIcon-root": {
       width: "30px",
