@@ -17,7 +17,9 @@ export const useStyles = makeStyles((theme) => ({
       paddingBottom: "20px",
     },
     "& div": {
-      width: "100px",
+      [theme.breakpoints.down("870")]: {
+        width: "100px",
+      }
     }
   },
 }));
