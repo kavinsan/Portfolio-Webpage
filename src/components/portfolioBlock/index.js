@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
-import ProfileImage from "../../assets/profile-image.png";
+
+import ProfileImage from "../../assets/profile-img.png";
 
 import { useStyles } from "./styles";
 import { useTheme } from "@material-ui/core/styles";
