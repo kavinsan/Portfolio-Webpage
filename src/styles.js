@@ -45,6 +45,9 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   subLeftEducationPanel: {
+    [theme.breakpoints.up("870")]: {
+      display: "none",
+    },
     [theme.breakpoints.down("xs")]: {
       order: 6,
     },
